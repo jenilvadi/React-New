@@ -1,19 +1,20 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
-import SignUp from './Firebsedaty1/SignUp'
-import Signin from './Firebsedaty1/Signin'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Dashbord from './Firebsedaty1/Dashbord'
+import Signup from './Firebsedaty1/SignUp'
+import Dashboard from './Firebsedaty1/Dashbord'
+import Signin from './Firebsedaty1/Signin'
 
 export default function App() {
   return (
     <div>
-      <BrowserRouter>
-       <Routes>
-        <Route path='/' Component={SignUp}></Route>
-        <Route path='/sigin' Component={Signin}></Route>
-        <Route path='/dashbord' Component={Dashbord}></Route>
-       </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Signup/>}></Route>
+      <Route path='/dashboard' element={<Dashboard/>}></Route>
+      <Route path='/signin' element={<Signin/>}></Route>
+    </Routes>
+    </BrowserRouter>
     </div>
   )
 }
