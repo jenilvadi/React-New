@@ -1,0 +1,98 @@
+/* Login.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.box1 {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 40px 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+}
+
+.box1 h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #555;
+}
+
+.box1 input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.box1 .bt1 {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box1 .bt1:hover {
+    background-color: #0056b3;
+}
+
+.box1 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.box1 span::before,
+.box1 span::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.box1 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box1 button:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.box1 button img {
+    margin-right: 10px;
+    height: 24px;
+}
